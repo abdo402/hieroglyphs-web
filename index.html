@@ -1,39 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css file.css"/>
-    <title>Hieroglyphs Learn</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <h2><u><strong>HIEROGLYPHS WEB</strong></u></h2>
-    </header>
+    <link rel="stylesheet" href="css file.css">
+    <title>Hieroglyphs Learn - Full Course</title>
+</head>
+<body>
 
-    <main>
-      <p class="intro-text">
-        <mark>Hieroglyphs</mark> is the language of the ancient Egyptians. 
-        It is an expression of lines that illustrate the life of the ancient Egyptian. 
-        On this page, we will learn these great lines.
-      </p>
+<header class="main-header">
+    <h2><u><strong>HIEROGLYPHS WEB</strong></u></h2>
+</header>
 
-      <h3><u>SINGLE VOICE PICTOGRAMS:</u></h3>
-      
-      <table>
-        <thead>
-          <tr>
-            <td>PHOTOGRAMMES</td>
-            <td>VOICE VALUE</td>
-            <td>OPPOSITE (ARABIC)</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td class="size1">𓄿</td><td>3</td><td>أ</td></tr> <tr><td class="size1">𓃀</td><td>b</td><td>ب</td></tr> <tr><td class="size1">𓏏</td><td>t</td><td>ت</td></tr> <tr><td class="size1">𓍿</td><td>ṯ</td><td>ث</td></tr> <tr><td class="size1">𓎼</td><td>g</td><td>ج</td></tr> <tr><td class="size1">𓎛</td><td>ḥ</td><td>ح</td></tr> <tr><td class="size1">𓐍</td><td>ḫ</td><td>خ</td></tr> <tr><td class="size1">𓂧</td><td>d</td><td>د</td></tr> <tr><td class="size1">𓂋</td><td>r</td><td>ر</td></tr> <tr><td class="size1">𓊃</td><td>s</td><td>ز</td></tr> <tr><td class="size1">𓋴</td><td>s</td><td>س</td></tr> <tr><td class="size1">𓈙</td><td>š</td><td>ش</td></tr> <tr><td class="size1">𓂢</td><td>c</td><td>ع</td></tr> <tr><td class="size1">𓆑</td><td>f</td><td>ف</td></tr> <tr><td class="size1">𓈎</td><td>ḳ</td><td>ق</td></tr> <tr><td class="size1">𓎡</td><td>k</td><td>ك</td></tr> <tr><td class="size1">𓃭</td><td>l</td><td>ل</td></tr> <tr><td class="size1">𓅓</td><td>m</td><td>م</td></tr> <tr><td class="size1">𓈖</td><td>n</td><td>ن</td></tr> <tr><td class="size1">𓉔</td><td>h</td><td>ه</td></tr> <tr><td class="size1">𓅱</td><td>w</td><td>و</td></tr> <tr><td class="size1">𓇋𓇋</td><td>y</td><td>ي</td></tr> </tbody>
-      </table>
-    </main>
+<main>
+    <section class="intro-section">
+        <p class="intro-text">
+            <mark>Hieroglyphs</mark> is the language of the ancient Egyptians. 
+            It is an expression of lines that illustrate the life of the ancient Egyptian. 
+            On this page, we will learn these great lines.
+        </p>
+        
+        <nav class="page-nav">
+            <strong>Quick Navigation:</strong>
+            <a href="#part1">Single Voice</a>
+            <a href="#part2">Two-Voice</a>
+            <a href="#part3">Three-Voice</a>
+            <a href="#part4">Numbers</a>
+        </nav>
 
-    <footer class="edit">
-      <small>THIS PAGE MADE BY = <mark>ABDELRAHMAN MOHAMMADツ</mark></small> </footer>
-  </body>
+        <div class="search-container">
+            <input type="text" id="glyphSearch" placeholder="Search for a sound or number..." onkeyup="filterGlyphs()">
+        </div>
+    </section>
+
+    <section id="part1">
+        <h3><u>SINGLE VOICE PICTOGRAMS (PART 1):</u></h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>PHOTOGRAMMES</th>
+                    <th>VOICE VALUE</th>
+                    <th>OPPOSITE (ARABIC)</th>
+                </tr>
+            </thead>
+            <tbody class="glyph-table-body">
+                <tr><td class="hieroglyph">𓄿</td><td>3</td><td>أ</td></tr>
+                <tr><td class="hieroglyph">𓃀</td><td>b</td><td>ب</td></tr>
+                <tr><td class="hieroglyph">𓏏</td><td>t</td><td>ت</td></tr>
+                <tr><td class="hieroglyph">𓍿</td><td>ṯ</td><td>ث</td></tr>
+                <tr><td class="hieroglyph">𓎼</td><td>g</td><td>ج</td></tr>
+                <tr><td class="hieroglyph">𓎛</td><td>ḥ</td><td>ح</td></tr>
+                <tr><td class="hieroglyph">𓐍</td><td>ḫ</td><td>خ</td></tr>
+                <tr><td class="hieroglyph">𓂧</td><td>d</td><td>د</td></tr>
+                <tr><td class="hieroglyph">𓂋</td><td>r</td><td>ر</td></tr>
+                <tr><td class="hieroglyph">𓊃</td><td>s</td><td>ز</td></tr>
+                <tr><td class="hieroglyph">𓋴</td><td>s</td><td>س</td></tr>
+                <tr><td class="hieroglyph">𓈙</td><td>š</td><td>ش</td></tr>
+                <tr><td class="hieroglyph">𓂢</td><td>c</td><td>ع</td></tr>
+                <tr><td class="hieroglyph">𓆑</td><td>f</td><td>ف</td></tr>
+                <tr><td class="hieroglyph">𓈎</td><td>ḳ</td><td>ق</td></tr>
+                <tr><td class="hieroglyph">𓎡</td><td>k</td><td>ك</td></tr>
+                <tr><td class="hieroglyph">𓃭</td><td>l</td><td>ل</td></tr>
+                <tr><td class="hieroglyph">𓅓</td><td>m</td><td>م</td></tr>
+                <tr><td class="hieroglyph">𓈖</td><td>n</td><td>ن</td></tr>
+                <tr><td class="hieroglyph">𓉔</td><td>h</td><td>ه</td></tr>
+                <tr><td class="hieroglyph">𓅱</td><td>w</td><td>و</td></tr>
+                <tr><td class="hieroglyph">𓇋𓇋</td><td>y</td><td>ي</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="part2">
+        <h3><u>TWO-VOICE PICTOGRAMS (PART 2):</u></h3>
+        <table>
+            <thead>
+                <tr><th>PHOTOGRAMMES</th><th>VOICE VALUE</th></tr>
+            </thead>
+            <tbody class="glyph-table-body">
+                <tr><td class="hieroglyph">𓄋</td><td>wp</td></tr>
+                <tr><td class="hieroglyph">𓃹</td><td>wn</td></tr>
+                <tr><td class="hieroglyph">𓎗</td><td>wd</td></tr>
+                <tr><td class="hieroglyph">𓄑</td><td>bḥ</td></tr>
+                <tr><td class="hieroglyph">𓉐</td><td>pr</td></tr>
+                <tr><td class="hieroglyph">𓄖</td><td>pḥ</td></tr>
+                <tr><td class="hieroglyph">𓁹</td><td>ir</td></tr>
+                <tr><td class="hieroglyph">𓆛</td><td>in</td></tr>
+                <tr><td class="hieroglyph">𓍋</td><td>3b</td></tr>
+                <tr><td class="hieroglyph">𓁷</td><td>ḥr</td></tr>
+                <tr><td class="hieroglyph">𓌻</td><td>mr</td></tr>
+                <tr><td class="hieroglyph">𓄓</td><td>ns</td></tr>
+                <tr><td class="hieroglyph">𓆱</td><td>ḫt</td></tr>
+                <tr><td class="hieroglyph">𓈋</td><td>ḏw</td></tr>
+                <tr><td class="hieroglyph">𓆄</td><td>šw</td></tr>
+                <tr><td class="hieroglyph">𓅜</td><td>ꜣḫ</td></tr>
+                <tr><td class="hieroglyph">𓉼</td><td>ꜥꜣ</td></tr>
+                <tr><td class="hieroglyph">𓍯</td><td>wꜣ</td></tr>
+                <tr><td class="hieroglyph">𓇯</td><td>pt</td></tr>
+                <tr><td class="hieroglyph">𓏠</td><td>mn</td></tr>
+                <tr><td class="hieroglyph">𓄟</td><td>ms</td></tr>
+                <tr><td class="hieroglyph">𓎟</td><td>nb</td></tr>
+                <tr><td class="hieroglyph">𓇳</td><td>rc</td></tr>
+                <tr><td class="hieroglyph">𓈍</td><td>ḫꜥ</td></tr>
+                <tr><td class="hieroglyph">𓅭</td><td>sꜣ</td></tr>
+                <tr><td class="hieroglyph">𓇓</td><td>sw</td></tr>
+                <tr><td class="hieroglyph">𓌢</td><td>sn</td></tr>
+                <tr><td class="hieroglyph">𓆷</td><td>šꜣ</td></tr>
+                <tr><td class="hieroglyph">𓂓</td><td>kꜣ</td></tr>
+                <tr><td class="hieroglyph">𓆎</td><td>km</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="part3">
+        <h3><u>THREE-VOICE PICTOGRAMS (PART 3):</u></h3>
+        <table>
+            <thead>
+                <tr><th>PHOTOGRAMMES</th><th>VOICE VALUE</th></tr>
+            </thead>
+            <tbody class="glyph-table-body">
+                <tr><td class="hieroglyph">𓊵</td><td>ḥtp</td></tr>
+                <tr><td class="hieroglyph">𓊹</td><td>nṯr</td></tr>
+                <tr><td class="hieroglyph">𓄤</td><td>nfr</td></tr>
+                <tr><td class="hieroglyph">𓈌</td><td>ꜣḫt</td></tr>
+                <tr><td class="hieroglyph">𓋹</td><td>ꜥnḫ</td></tr>
+                <tr><td class="hieroglyph">𓋾</td><td>ḥḳꜣ</td></tr>
+                <tr><td class="hieroglyph">𓆣</td><td>ḫpr</td></tr>
+                <tr><td class="hieroglyph">𓊤</td><td>ḫrw</td></tr>
+                <tr><td class="hieroglyph">𓄔</td><td>sḏm</td></tr>
+                <tr><td class="hieroglyph">𓄥</td><td>smꜣ</td></tr>
+                <tr><td class="hieroglyph">𓇼</td><td>ḏwꜣ(sbꜣ)</td></tr>
+                <tr><td class="hieroglyph">𓃂</td><td>wꜥb</td></tr>
+                <tr><td class="hieroglyph">𓄂</td><td>ḥꜣt</td></tr>
+                <tr><td class="hieroglyph">𓂡</td><td>nḫt</td></tr>
+                <tr><td class="hieroglyph">𓇺</td><td>iꜥh</td></tr>
+                <tr><td class="hieroglyph">𓄊</td><td>wsr</td></tr>
+                <tr><td class="hieroglyph">𓆤</td><td>bit</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="part4">
+        <h3><u>NUMBERS PICTOGRAMS (PART 4):</u></h3>
+        <table>
+            <thead>
+                <tr><th>PHOTOGRAMMES</th><th>NUMBER</th></tr>
+            </thead>
+            <tbody class="glyph-table-body">
+                <tr><td class="hieroglyph">𓏤</td><td>1</td></tr>
+                <tr><td class="hieroglyph">𓎆</td><td>10</td></tr>
+                <tr><td class="hieroglyph">𓍢</td><td>100</td></tr>
+                <tr><td class="hieroglyph">𓆼</td><td>1000</td></tr>
+                <tr><td class="hieroglyph">𓂭</td><td>10,000</td></tr>
+                <tr><td class="hieroglyph">𓆐</td><td>100,000</td></tr>
+                <tr><td class="hieroglyph">𓁨</td><td>1,000,000</td></tr>
+                </tbody>
+        </table>
+    </section>
+</main>
+
+<footer class="edit">
+    <small><b>THIS PAGE MADE BY = <mark>ABDELRAHMAN MOHAMMADツ</mark></b></small>
+</footer>
+
+<script>
+    function filterGlyphs() {
+        let input = document.getElementById('glyphSearch').value.toLowerCase();
+        let rows = document.querySelectorAll('.glyph-table-body tr');
+        rows.forEach(row => {
+            let text = row.innerText.toLowerCase();
+            row.style.display = text.includes(input) ? "" : "none";
+        });
+    }
+</script>
+
+</body>
 </html>
